@@ -43,3 +43,8 @@ while True:
     intent = get_intent (text)
 
     response = generate_response (intent)
+
+
+import os
+text = text.replace("\n", "").strip() os.system("pactl set-sink-mute @DEFAULT SINK@ 0") time.sleep(0.4)
+os.system('espeak-ng -q" "') os.system(f'espeak-ng -v hi -s 120 -p 50 "(text}"')
